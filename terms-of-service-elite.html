@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms of Service — Bzillion.Club ELITE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--black:#050505;--black2:#0a0a0a;--black3:#101010;--black4:#161616;--border:#222;--border2:#2a2a2a;--gold:#b8922a;--gold2:#d4a843;--gold3:#f0c866;--crimson:#8b0000;--text:#b0a898;--text2:#7a7068;--white:#f2ede8;--green2:#52b788;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--black);color:var(--text);font-family:'Outfit',sans-serif;font-size:16px;line-height:1.8;overflow-x:hidden;}
+    body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;}
+    .announce{background:linear-gradient(90deg,var(--crimson) 0%,var(--gold) 50%,var(--crimson) 100%);background-size:200% 100%;animation:shimmer 4s linear infinite;padding:9px 20px;text-align:center;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--white);}
+    @keyframes shimmer{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+    header{background:rgba(5,5,5,0.97);border-bottom:1px solid var(--border);padding:18px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+    .logo{font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--white);text-decoration:none;}
+    .logo .et{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold3);display:block;margin-top:-4px;}
+    nav a{color:var(--text2);text-decoration:none;font-size:13px;margin-left:24px;font-weight:500;transition:color 0.2s;}
+    nav a:hover{color:var(--gold3);}
+    .nav-cta{background:var(--gold);color:var(--black) !important;padding:8px 20px;font-weight:600 !important;}
+    .nav-cta:hover{background:var(--gold3) !important;}
+    .page-hero{padding:80px 48px 56px;position:relative;overflow:hidden;border-bottom:1px solid var(--border);}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 0%,rgba(184,146,42,0.06) 0%,transparent 70%);}
+    .hero-inner{position:relative;z-index:2;max-width:960px;margin:0 auto;}
+    .kicker{display:inline-flex;align-items:center;gap:10px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold2);margin-bottom:20px;}
+    .kicker::before{content:'';width:24px;height:1px;background:var(--gold2);}
+    .page-hero h1{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(36px,5vw,64px);color:var(--white);line-height:1.1;margin-bottom:12px;}
+    .page-hero h1 span{color:var(--gold3);}
+    .page-hero p{color:var(--text2);font-size:13px;font-family:'DM Mono',monospace;letter-spacing:1.5px;}
+    .rule{width:60px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin-top:20px;}
+    main{max-width:860px;margin:0 auto;padding:64px 48px 96px;}
+    .lead-box{background:var(--black3);border:1px solid var(--border2);border-left:3px solid var(--gold);padding:22px 28px;margin-bottom:44px;font-family:'Playfair Display',serif;font-style:italic;font-size:18px;color:var(--text);line-height:1.8;}
+    .not-box{background:var(--black3);border:1px solid var(--border2);border-left:3px solid #8b2222;padding:22px 28px;margin:20px 0 28px;}
+    .not-box h4{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#cc4444;margin-bottom:14px;}
+    .not-box li::before{color:#cc4444 !important;}
+    h2{font-family:'Playfair Display',serif;font-weight:900;font-size:21px;color:var(--white);margin:48px 0 16px;padding-bottom:12px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;}
+    h2:first-of-type{margin-top:0;}
+    .n{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--gold2);background:rgba(184,146,42,0.08);border:1px solid rgba(184,146,42,0.15);padding:3px 10px;}
+    p{color:var(--text);margin-bottom:16px;line-height:1.85;font-size:15px;}
+    ul{list-style:none;padding:0;margin-bottom:16px;display:flex;flex-direction:column;gap:10px;}
+    li{padding-left:22px;position:relative;line-height:1.7;font-size:15px;color:var(--text);}
+    li::before{content:'▸';position:absolute;left:0;color:var(--gold2);font-size:11px;top:4px;}
+    a{color:var(--gold2);text-decoration:none;}
+    a:hover{color:var(--gold3);text-decoration:underline;}
+    strong{color:var(--white);}
+    footer{background:#030303;border-top:1px solid var(--border);padding:40px 48px 24px;}
+    .fi{max-width:860px;margin:0 auto;}
+    .fb{font-family:'Playfair Display',serif;font-size:18px;color:var(--white);font-weight:900;margin-bottom:16px;}
+    .fb span{color:var(--gold3);}
+    .fn{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-bottom:14px;}
+    .fn a{color:#444;text-decoration:none;font-size:12px;transition:color 0.2s;}
+    .fn a:hover{color:var(--gold2);}
+    .fc{text-align:center;color:#333;font-size:11px;}
+    @media(max-width:768px){header{padding:16px 20px;}main{padding:40px 20px 64px;}.page-hero{padding:60px 20px 40px;}footer{padding:32px 20px 20px;}}
+  </style>
+</head>
+<body>
+<div class="announce">🔥 ELITE Membership — Full Platform Access — $15/Month or $150/Year</div>
+<header>
+  <a href="index.html" class="logo">Bzillion<span style="color:var(--gold3)">.</span>Club<span class="et">Elite Membership</span></a>
+  <nav>
+    <a href="index.html#tools">Tools</a>
+    <a href="index.html#referrals">Free Referrals</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="contact-elite.html">Contact</a>
+    <a href="https://warriorplus.com" class="nav-cta">Join ELITE</a>
+  </nav>
+</header>
+<div class="page-hero">
+  <div class="hero-inner">
+    <div class="kicker">Legal</div>
+    <h1>Terms of <span>Service</span></h1>
+    <p>Last Updated: January 1, 2026</p>
+    <div class="rule"></div>
+  </div>
+</div>
+<main>
+  <div class="lead-box">Please read these Terms carefully before purchasing ELITE membership. By accessing or using the platform, you agree to be bound by these terms in full.</div>
+
+  <h2><span class="n">01</span> About Bzillion.Club</h2>
+  <p>Bzillion.Club is a <strong>community advertising and networking platform</strong> operated by BB Enterprises, Lucknow, Uttar Pradesh, India. Members use the platform to broadcast offers, grow referral networks, earn commissions, and use marketing automation tools.</p>
+  <div class="not-box">
+    <h4>Important — We Are NOT:</h4>
+    <ul>
+      <li>A Multi-Level Marketing (MLM) company — commissions are direct referral only, one level</li>
+      <li>A "get rich quick" scheme — we make no income guarantees whatsoever</li>
+      <li>An investment platform — membership fees provide platform access only</li>
+      <li>An employer — all members are independent platform users</li>
+    </ul>
+  </div>
+
+  <h2><span class="n">02</span> Eligibility</h2>
+  <p>By using Bzillion.Club you confirm you are at least <strong>18 years of age</strong>, have full legal capacity to enter a binding agreement, and that your use complies with all applicable laws in your jurisdiction. Use of VPNs or proxies to circumvent geographic restrictions is strictly prohibited and may result in immediate account termination without refund.</p>
+
+  <h2><span class="n">03</span> ELITE Membership — What You Get</h2>
+  <p>ELITE membership is available as a <strong>monthly plan ($15/month)</strong> or <strong>annual plan ($150/year)</strong>. Both plans include identical features:</p>
+  <ul>
+    <li>365 daily Broadcast Messages to 128,000+ members — with <strong>image support</strong></li>
+    <li>Audience-targeted PTC ad posting</li>
+    <li>Private messaging to any platform member</li>
+    <li><strong>Auto Mailer</strong> — up to 30-day automated email sequence sent to all referrals</li>
+    <li><strong>Bulk Mailer</strong> — one daily email broadcast to your entire referral list</li>
+    <li><strong>Link Rotator</strong> — distribute traffic across multiple URLs from one link</li>
+    <li><strong>Free referrals</strong> — unsponsored new members assigned to your account</li>
+    <li>Referral bonus of <strong>$0.10 per direct sign-up</strong></li>
+    <li>Upgrade commission of <strong>50%</strong> when referrals upgrade to any paid plan</li>
+    <li>Daily login bonus spin — up to <strong>$0.10 per day</strong></li>
+    <li>Minimum withdrawal of <strong>$5</strong> paid weekly in USDC every Sunday</li>
+    <li>VIP badge + <strong>ELITE badge</strong> and priority community status</li>
+    <li>Dedicated relationship manager for personalized support</li>
+  </ul>
+
+  <h2><span class="n">04</span> Broadcast Rules</h2>
+  <p>Each ELITE member may post exactly <strong>one (1) Broadcast Message per 24-hour period.</strong> ELITE broadcasts may include images in addition to text. All broadcast content must be lawful, honest, non-misleading, and compliant with applicable advertising regulations. Violations may result in suspension or termination.</p>
+
+  <h2><span class="n">05</span> Auto Mailer & Bulk Mailer Rules</h2>
+  <p>The Auto Mailer and Bulk Mailer tools are provided to communicate with your own referral network only. You agree to:</p>
+  <ul>
+    <li>Use these tools only to contact members who have registered under your referral link</li>
+    <li>Ensure all email content is lawful, honest, and compliant with CAN-SPAM regulations</li>
+    <li>Not use these tools to send spam, illegal content, or misleading offers</li>
+    <li>Limit Bulk Mailer to one send per 24-hour period as enforced by the platform</li>
+  </ul>
+  <p>Misuse of email tools may result in immediate tool suspension or full account termination.</p>
+
+  <h2><span class="n">06</span> Free Referral Assignment</h2>
+  <p>ELITE members receive free referrals — new members who join Bzillion.Club without a referral link are automatically assigned to ELITE accounts. The number of free referrals varies based on overall platform traffic and cannot be guaranteed. Bzillion.Club reserves the right to modify the free referral assignment policy at any time with notice.</p>
+
+  <h2><span class="n">07</span> Commission Structure — Direct Referral Only</h2>
+  <p>Bzillion.Club operates a <strong>single-level direct referral commission system only.</strong> You earn commissions exclusively from individuals who register using your personal referral link. You do not earn from your referrals' downstream activities. Commissions:</p>
+  <ul>
+    <li><strong>$0.10</strong> per direct referral sign-up (credited to account balance)</li>
+    <li><strong>50%</strong> of any paid membership upgrade made by your direct referrals</li>
+    <li>Processed and paid every <strong>Sunday in USDC</strong> to your registered wallet</li>
+    <li>Minimum withdrawal: <strong>$5</strong></li>
+  </ul>
+
+  <h2><span class="n">08</span> Pricing & Billing</h2>
+  <p>ELITE membership is priced at <strong>$15/month</strong> or <strong>$150/year</strong> (saving $30 vs monthly). All payments are processed by WarriorPlus. You may activate or deactivate auto-renewal at any time through Profile → Settings. Prices are subject to change — the price at time of purchase is locked in for that membership period.</p>
+
+  <h2><span class="n">09</span> Non-Refundable Digital Product</h2>
+  <p>All ELITE membership fees are <strong>non-refundable</strong> once the account is activated and access is granted. Please review all features, tool documentation, and geographic restrictions carefully before purchasing. See our full <a href="refund-policy-elite.html">Refund Policy</a> for details.</p>
+
+  <h2><span class="n">10</span> Prohibited Conduct</h2>
+  <ul>
+    <li>Using the platform or email tools for any unlawful or fraudulent purpose</li>
+    <li>Sending spam, malware, or misleading content via Auto Mailer or Bulk Mailer</li>
+    <li>Posting more than one broadcast per 24-hour period</li>
+    <li>Using VPNs or proxies to circumvent geographic restrictions</li>
+    <li>Harassing, abusing, or attempting to harm other members</li>
+    <li>Attempting to gain unauthorized access to any part of the platform</li>
+    <li>Misrepresenting your relationship with Bzillion.Club in any promotional material</li>
+  </ul>
+
+  <h2><span class="n">11</span> Affiliate Disclosure</h2>
+  <p>This offer is hosted on WarriorPlus. Affiliates promoting this offer earn commission per sale. All affiliate activities must comply with WarriorPlus's terms and applicable FTC guidelines, including clear and conspicuous disclosure of the affiliate relationship in all promotional materials.</p>
+
+  <h2><span class="n">12</span> Disclaimer of Warranties</h2>
+  <p>The platform is provided "as is" and "as available." We make no warranties regarding uptime, results, or income. Income scenarios on the sales page are illustrative only and not guarantees. Your results will depend entirely on your own effort, strategy, referral quality, and market conditions.</p>
+
+  <h2><span class="n">13</span> Limitation of Liability</h2>
+  <p>In no event shall Bzillion.Club or BB Enterprises be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of — or inability to use — the platform or any of its tools and services.</p>
+
+  <h2><span class="n">14</span> Termination</h2>
+  <p>We reserve the right to suspend or terminate your account at any time for violation of these Terms, without prior notice or refund. Upon termination, all access to the platform and its tools — including Auto Mailer, Bulk Mailer, and Link Rotator — ceases immediately.</p>
+
+  <h2><span class="n">15</span> Governing Law</h2>
+  <p>These Terms are governed by the laws of India. Any disputes are subject to the exclusive jurisdiction of the courts in Lucknow, Uttar Pradesh, India.</p>
+
+  <h2><span class="n">16</span> Contact Us</h2>
+  <ul>
+    <li>Email: <a href="mailto:admin@bzillion.club">admin@bzillion.club</a></li>
+    <li>Website: <a href="https://bzillion.club" target="_blank">Bzillion.Club</a></li>
+    <li>Operated by: BB Enterprises, Lucknow, Uttar Pradesh, India</li>
+  </ul>
+</main>
+<footer>
+  <div class="fi">
+    <div class="fb">Bzillion<span>.</span>Club</div>
+    <div class="fn">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy-elite.html">Privacy Policy</a>
+      <a href="terms-of-service-elite.html">Terms of Service</a>
+      <a href="refund-policy-elite.html">Refund Policy</a>
+      <a href="contact-elite.html">Contact Us</a>
+    </div>
+    <p class="fc">© 2026 Bzillion.Club (BB Enterprises). All rights reserved. &nbsp;|&nbsp; admin@bzillion.club</p>
+  </div>
+</footer>
+</body>
+</html>

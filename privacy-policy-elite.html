@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — Bzillion.Club ELITE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--black:#050505;--black2:#0a0a0a;--black3:#101010;--black4:#161616;--border:#222;--border2:#2a2a2a;--gold:#b8922a;--gold2:#d4a843;--gold3:#f0c866;--crimson:#8b0000;--text:#b0a898;--text2:#7a7068;--white:#f2ede8;--green2:#52b788;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--black);color:var(--text);font-family:'Outfit',sans-serif;font-size:16px;line-height:1.8;overflow-x:hidden;}
+    body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;}
+    .announce{background:linear-gradient(90deg,var(--crimson) 0%,var(--gold) 50%,var(--crimson) 100%);background-size:200% 100%;animation:shimmer 4s linear infinite;padding:9px 20px;text-align:center;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--white);}
+    @keyframes shimmer{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+    header{background:rgba(5,5,5,0.97);border-bottom:1px solid var(--border);padding:18px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+    .logo{font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--white);text-decoration:none;}
+    .logo .et{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold3);display:block;margin-top:-4px;}
+    nav a{color:var(--text2);text-decoration:none;font-size:13px;margin-left:24px;font-weight:500;transition:color 0.2s;}
+    nav a:hover{color:var(--gold3);}
+    .nav-cta{background:var(--gold);color:var(--black) !important;padding:8px 20px;font-weight:600 !important;}
+    .nav-cta:hover{background:var(--gold3) !important;}
+    .page-hero{padding:80px 48px 56px;position:relative;overflow:hidden;border-bottom:1px solid var(--border);}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 0%,rgba(184,146,42,0.06) 0%,transparent 70%);}
+    .hero-inner{position:relative;z-index:2;max-width:960px;margin:0 auto;}
+    .kicker{display:inline-flex;align-items:center;gap:10px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold2);margin-bottom:20px;}
+    .kicker::before{content:'';width:24px;height:1px;background:var(--gold2);}
+    .page-hero h1{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(36px,5vw,64px);color:var(--white);line-height:1.1;margin-bottom:12px;letter-spacing:-0.5px;}
+    .page-hero h1 span{color:var(--gold3);}
+    .page-hero p{color:var(--text2);font-size:13px;font-family:'DM Mono',monospace;letter-spacing:1.5px;}
+    .rule{width:60px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin-top:20px;}
+    main{max-width:860px;margin:0 auto;padding:64px 48px 96px;}
+    .lead-box{background:var(--black3);border:1px solid var(--border2);border-left:3px solid var(--gold);padding:22px 28px;margin-bottom:44px;font-family:'Playfair Display',serif;font-style:italic;font-size:18px;color:var(--text);line-height:1.8;}
+    h2{font-family:'Playfair Display',serif;font-weight:900;font-size:21px;color:var(--white);margin:48px 0 16px;padding-bottom:12px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;}
+    h2:first-of-type{margin-top:0;}
+    .n{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--gold2);background:rgba(184,146,42,0.08);border:1px solid rgba(184,146,42,0.15);padding:3px 10px;}
+    p{color:var(--text);margin-bottom:16px;line-height:1.85;font-size:15px;}
+    ul{list-style:none;padding:0;margin-bottom:16px;display:flex;flex-direction:column;gap:10px;}
+    li{padding-left:22px;position:relative;line-height:1.7;font-size:15px;color:var(--text);}
+    li::before{content:'▸';position:absolute;left:0;color:var(--gold2);font-size:11px;top:4px;}
+    a{color:var(--gold2);text-decoration:none;}
+    a:hover{color:var(--gold3);text-decoration:underline;}
+    strong{color:var(--white);}
+    footer{background:#030303;border-top:1px solid var(--border);padding:40px 48px 24px;}
+    .fi{max-width:860px;margin:0 auto;}
+    .fb{font-family:'Playfair Display',serif;font-size:18px;color:var(--white);font-weight:900;margin-bottom:16px;}
+    .fb span{color:var(--gold3);}
+    .fn{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-bottom:14px;}
+    .fn a{color:#444;text-decoration:none;font-size:12px;transition:color 0.2s;}
+    .fn a:hover{color:var(--gold2);}
+    .fc{text-align:center;color:#333;font-size:11px;}
+    @media(max-width:768px){header{padding:16px 20px;}main{padding:40px 20px 64px;}.page-hero{padding:60px 20px 40px;}footer{padding:32px 20px 20px;}}
+  </style>
+</head>
+<body>
+<div class="announce">🔥 ELITE Membership — Full Platform Access — $15/Month or $150/Year</div>
+<header>
+  <a href="index.html" class="logo">Bzillion<span style="color:var(--gold3)">.</span>Club<span class="et">Elite Membership</span></a>
+  <nav>
+    <a href="index.html#tools">Tools</a>
+    <a href="index.html#referrals">Free Referrals</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="contact-elite.html">Contact</a>
+    <a href="https://warriorplus.com" class="nav-cta">Join ELITE</a>
+  </nav>
+</header>
+<div class="page-hero">
+  <div class="hero-inner">
+    <div class="kicker">Legal</div>
+    <h1>Privacy <span>Policy</span></h1>
+    <p>Last Updated: January 1, 2026</p>
+    <div class="rule"></div>
+  </div>
+</div>
+<main>
+  <div class="lead-box">Your privacy is a commitment, not a checkbox. This policy explains clearly and honestly how Bzillion.Club collects, uses, and protects your personal information as an ELITE member.</div>
+
+  <h2><span class="n">01</span> Information We Collect</h2>
+  <p>We collect information you provide when interacting with our platform:</p>
+  <ul>
+    <li>Account registration — name, email address, username</li>
+    <li>Purchase and transaction data processed via WarriorPlus</li>
+    <li>USDC wallet address and network details for commission payouts</li>
+    <li>Auto Mailer and Bulk Mailer content you create and schedule</li>
+    <li>Broadcast content, messages, and platform activity</li>
+    <li>Support communications sent to admin@bzillion.club</li>
+    <li>IP address, browser type, device data, and usage analytics</li>
+  </ul>
+
+  <h2><span class="n">02</span> How We Use Your Information</h2>
+  <ul>
+    <li>Provide and maintain your ELITE membership and all associated tools</li>
+    <li>Process your WarriorPlus purchase and activate your account instantly</li>
+    <li>Deliver weekly USDC commission payouts every Sunday</li>
+    <li>Operate the Auto Mailer and Bulk Mailer on your behalf to your referral list</li>
+    <li>Assign free referrals to your account as an ELITE benefit</li>
+    <li>Send transactional emails — confirmations, payout alerts, account notices</li>
+    <li>Assign and support your dedicated relationship manager</li>
+    <li>Detect and prevent fraud, abuse, and VPN circumvention</li>
+    <li>Comply with applicable legal obligations under Indian law</li>
+  </ul>
+
+  <h2><span class="n">03</span> We Do NOT Sell Your Data</h2>
+  <p>We do <strong>not</strong> sell, rent, trade, or transfer your personal information to any third party for their marketing purposes. Your data is used exclusively to operate your ELITE membership. We are fully CAN-SPAM compliant.</p>
+
+  <h2><span class="n">04</span> Auto Mailer & Bulk Mailer Data</h2>
+  <p>Email content you create in the Auto Mailer and Bulk Mailer is stored securely solely to enable automated delivery to your referral list. This content is:</p>
+  <ul>
+    <li>Used exclusively to send emails on your behalf to your own referrals</li>
+    <li>Never shared with other members or third parties</li>
+    <li>Deleted when you remove it from your dashboard</li>
+  </ul>
+
+  <h2><span class="n">05</span> USDC Wallet & Financial Data</h2>
+  <p>Your USDC wallet address is stored solely to process your commission payouts. This information is encrypted and never shared outside the payment processing requirement. All payment card processing is handled entirely by WarriorPlus — Bzillion.Club does not store card or banking data.</p>
+
+  <h2><span class="n">06</span> Cookies</h2>
+  <p>We use cookies to maintain your login session, track platform activity, and improve user experience. You may disable cookies in your browser, but some features — including your dashboard, Auto Mailer, and Bulk Mailer — may not function correctly without them.</p>
+
+  <h2><span class="n">07</span> Third-Party Services</h2>
+  <ul>
+    <li><strong>WarriorPlus</strong> — Payment processing and affiliate management. Subject to their own privacy policy.</li>
+    <li><strong>Cloudflare</strong> — CDN and security. Your IP may be processed through their global network.</li>
+    <li><strong>Trustpilot</strong> — Independent review platform. Governed by Trustpilot's own privacy terms.</li>
+  </ul>
+
+  <h2><span class="n">08</span> Data Security</h2>
+  <p>We implement industry-standard technical and organizational measures to protect your data — including encrypted storage, secure HTTPS connections, and restricted internal access. No Internet transmission is 100% secure, but we take every reasonable precaution.</p>
+
+  <h2><span class="n">09</span> Your Rights</h2>
+  <ul>
+    <li>Access the personal information we hold about you</li>
+    <li>Request correction of inaccurate or incomplete data</li>
+    <li>Request deletion of your personal data (subject to legal retention requirements)</li>
+    <li>Opt out of marketing communications via unsubscribe links at any time</li>
+    <li>Deactivate auto-renewal or close your account via Profile → Settings</li>
+  </ul>
+
+  <h2><span class="n">10</span> Children's Privacy</h2>
+  <p>Bzillion.Club is intended for users 18 years of age and older. We do not knowingly collect personal information from minors. If you believe a minor has registered, contact us immediately at <a href="mailto:admin@bzillion.club">admin@bzillion.club</a>.</p>
+
+  <h2><span class="n">11</span> Governing Law</h2>
+  <p>This Privacy Policy is governed by the laws of India. Disputes are subject to the exclusive jurisdiction of the courts in Lucknow, Uttar Pradesh, India.</p>
+
+  <h2><span class="n">12</span> Changes to This Policy</h2>
+  <p>We may update this policy from time to time. Updates are effective immediately upon posting. Continued use of the platform constitutes acceptance of the revised policy.</p>
+
+  <h2><span class="n">13</span> Contact Us</h2>
+  <ul>
+    <li>Email: <a href="mailto:admin@bzillion.club">admin@bzillion.club</a></li>
+    <li>Website: <a href="https://bzillion.club" target="_blank">Bzillion.Club</a></li>
+    <li>Operated by: BB Enterprises, Lucknow, Uttar Pradesh, India</li>
+  </ul>
+</main>
+<footer>
+  <div class="fi">
+    <div class="fb">Bzillion<span>.</span>Club</div>
+    <div class="fn">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy-elite.html">Privacy Policy</a>
+      <a href="terms-of-service-elite.html">Terms of Service</a>
+      <a href="refund-policy-elite.html">Refund Policy</a>
+      <a href="contact-elite.html">Contact Us</a>
+    </div>
+    <p class="fc">© 2026 Bzillion.Club (BB Enterprises). All rights reserved. &nbsp;|&nbsp; admin@bzillion.club</p>
+  </div>
+</footer>
+</body>
+</html>

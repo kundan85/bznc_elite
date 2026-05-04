@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us — Bzillion.Club ELITE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--black:#050505;--black2:#0a0a0a;--black3:#101010;--black4:#161616;--border:#222;--border2:#2a2a2a;--gold:#b8922a;--gold2:#d4a843;--gold3:#f0c866;--crimson:#8b0000;--text:#b0a898;--text2:#7a7068;--white:#f2ede8;--green2:#52b788;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--black);color:var(--text);font-family:'Outfit',sans-serif;font-size:16px;line-height:1.8;overflow-x:hidden;}
+    body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;}
+    .announce{background:linear-gradient(90deg,var(--crimson) 0%,var(--gold) 50%,var(--crimson) 100%);background-size:200% 100%;animation:shimmer 4s linear infinite;padding:9px 20px;text-align:center;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--white);}
+    @keyframes shimmer{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+    header{background:rgba(5,5,5,0.97);border-bottom:1px solid var(--border);padding:18px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+    .logo{font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--white);text-decoration:none;}
+    .logo .et{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold3);display:block;margin-top:-4px;}
+    nav a{color:var(--text2);text-decoration:none;font-size:13px;margin-left:24px;font-weight:500;transition:color 0.2s;}
+    nav a:hover{color:var(--gold3);}
+    .nav-cta{background:var(--gold);color:var(--black) !important;padding:8px 20px;font-weight:600 !important;}
+    .nav-cta:hover{background:var(--gold3) !important;}
+    .page-hero{padding:80px 48px 56px;position:relative;overflow:hidden;border-bottom:1px solid var(--border);}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 0%,rgba(184,146,42,0.06) 0%,transparent 70%);}
+    .hero-inner{position:relative;z-index:2;max-width:960px;margin:0 auto;}
+    .kicker{display:inline-flex;align-items:center;gap:10px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold2);margin-bottom:20px;}
+    .kicker::before{content:'';width:24px;height:1px;background:var(--gold2);}
+    .page-hero h1{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(36px,5vw,64px);color:var(--white);line-height:1.1;margin-bottom:12px;}
+    .page-hero h1 span{color:var(--gold3);}
+    .page-hero p{color:var(--text2);font-size:13px;font-family:'DM Mono',monospace;letter-spacing:1.5px;}
+    .rule{width:60px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin-top:20px;}
+    main{max-width:900px;margin:0 auto;padding:64px 48px 96px;}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:56px;}
+    @media(max-width:600px){.contact-grid{grid-template-columns:1fr;}}
+    .contact-card{background:var(--black3);border:1px solid var(--border2);padding:40px 32px;text-align:center;transition:border-color 0.3s,transform 0.3s;position:relative;overflow:hidden;}
+    .contact-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity 0.3s;}
+    .contact-card:hover{border-color:rgba(184,146,42,0.3);transform:translateY(-3px);}
+    .contact-card:hover::before{opacity:1;}
+    .cc-icon{font-size:44px;margin-bottom:20px;}
+    .contact-card h3{font-family:'Playfair Display',serif;font-weight:900;font-size:22px;color:var(--white);margin-bottom:10px;}
+    .contact-card p{font-size:14px;color:var(--text2);margin-bottom:22px;line-height:1.7;}
+    .cc-email{display:inline-block;font-family:'DM Mono',monospace;font-size:14px;letter-spacing:1px;color:var(--gold3);text-decoration:none;border-bottom:1px solid rgba(240,200,102,0.25);padding-bottom:2px;transition:border-color 0.2s;}
+    .cc-email:hover{border-color:var(--gold3);}
+    .cc-btn{display:inline-block;background:linear-gradient(135deg,var(--gold) 0%,var(--gold3) 100%);color:var(--black);font-family:'Outfit',sans-serif;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;padding:12px 28px;margin-bottom:16px;transition:opacity 0.2s;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));}
+    .cc-btn:hover{opacity:0.9;}
+    .divider{border:none;border-top:1px solid var(--border);margin:0 0 48px;}
+    .topics-wrap h2{font-family:'Playfair Display',serif;font-weight:900;font-size:28px;color:var(--white);margin-bottom:8px;}
+    .topics-wrap .sub{color:var(--text2);font-size:14px;margin-bottom:28px;}
+    .topics-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:4px;}
+    .topic{background:var(--black3);border:1px solid var(--border);padding:22px;display:flex;gap:16px;align-items:flex-start;transition:border-color 0.2s;}
+    .topic:hover{border-color:var(--border2);}
+    .t-icon{font-size:26px;flex-shrink:0;}
+    .topic h4{font-family:'Outfit',sans-serif;font-weight:600;font-size:15px;color:var(--white);margin-bottom:4px;}
+    .topic p{font-size:12px;color:var(--text2);margin:0;line-height:1.6;}
+    .rm-box{margin-top:48px;background:linear-gradient(135deg,rgba(184,146,42,0.06) 0%,var(--black3) 100%);border:1px solid rgba(184,146,42,0.2);padding:32px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;}
+    @media(max-width:600px){.rm-box{grid-template-columns:1fr;}}
+    .rm-icon{font-size:48px;}
+    .rm-box h3{font-family:'Playfair Display',serif;font-weight:900;font-size:20px;color:var(--white);margin-bottom:8px;}
+    .rm-box p{font-size:14px;color:var(--text2);line-height:1.7;margin:0;}
+    .response-note{margin-top:28px;background:var(--black3);border:1px solid var(--border);border-left:3px solid var(--gold);padding:18px 24px;font-size:14px;color:var(--text2);line-height:1.7;}
+    .response-note strong{color:var(--gold3);}
+    footer{background:#030303;border-top:1px solid var(--border);padding:40px 48px 24px;}
+    .fi{max-width:900px;margin:0 auto;}
+    .fb{font-family:'Playfair Display',serif;font-size:18px;color:var(--white);font-weight:900;margin-bottom:16px;}
+    .fb span{color:var(--gold3);}
+    .fn{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-bottom:14px;}
+    .fn a{color:#444;text-decoration:none;font-size:12px;transition:color 0.2s;}
+    .fn a:hover{color:var(--gold2);}
+    .fc{text-align:center;color:#333;font-size:11px;}
+    @media(max-width:768px){header{padding:16px 20px;}main{padding:40px 20px 64px;}.page-hero{padding:60px 20px 40px;}footer{padding:32px 20px 20px;}}
+  </style>
+</head>
+<body>
+<div class="announce">🔥 ELITE Membership — Full Platform Access — $15/Month or $150/Year</div>
+<header>
+  <a href="index.html" class="logo">Bzillion<span style="color:var(--gold3)">.</span>Club<span class="et">Elite Membership</span></a>
+  <nav>
+    <a href="index.html#tools">Tools</a>
+    <a href="index.html#referrals">Free Referrals</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="contact-elite.html">Contact</a>
+    <a href="https://warriorplus.com" class="nav-cta">Join ELITE</a>
+  </nav>
+</header>
+<div class="page-hero">
+  <div class="hero-inner">
+    <div class="kicker">Support</div>
+    <h1>Contact <span>Us</span></h1>
+    <p>ELITE Members Receive Priority Support — We Respond Within 24 Hours</p>
+    <div class="rule"></div>
+  </div>
+</div>
+<main>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="cc-icon">✉️</div>
+      <h3>Email Support</h3>
+      <p>Primary channel for all enquiries — account access, billing, Auto Mailer setup, refund requests, and anything else.</p>
+      <a href="mailto:admin@bzillion.club" class="cc-btn">Send Email</a><br/>
+      <a href="mailto:admin@bzillion.club" class="cc-email">admin@bzillion.club</a>
+    </div>
+    <div class="contact-card">
+      <div class="cc-icon">🌐</div>
+      <h3>Member Dashboard</h3>
+      <p>Already an ELITE member? Log in to your dashboard to manage your Auto Mailer, Bulk Mailer, Link Rotator, and account settings.</p>
+      <a href="https://bzillion.club" target="_blank" class="cc-btn">Go to Platform</a><br/>
+      <a href="https://bzillion.club" target="_blank" class="cc-email">Bzillion.Club</a>
+    </div>
+  </div>
+
+  <hr class="divider"/>
+
+  <div class="topics-wrap">
+    <h2>What Can We Help With?</h2>
+    <p class="sub">Include your topic in the email subject line for fastest routing to the right team member.</p>
+    <div class="topics-grid">
+      <div class="topic">
+        <div class="t-icon">🔑</div>
+        <div>
+          <h4>Account Access</h4>
+          <p>Login issues, password resets, account activation after purchase</p>
+        </div>
+      </div>
+      <div class="topic">
+        <div class="t-icon">📧</div>
+        <div>
+          <h4>Auto Mailer Setup</h4>
+          <p>Help writing day sequences, scheduling, and troubleshooting delivery</p>
+        </div>
+      </div>
+      <div class="topic">
+        <div class="t-icon">📨</div>
+        <div>
+          <h4>Bulk Mailer</h4>
+          <p>Send limits, delivery issues, list questions, and best practices</p>
+        </div>
+      </div>
+      <div class="topic">
+        <div class="t-icon">🔄</div>
+        <div>
+          <h4>Link Rotator</h4>
+          <p>Adding URLs, traffic distribution, and tracking setup</p>
+        </div>
+      </div>
+      <div class="topic">
+        <div class="t-icon">🎁</div>
+        <div>
+          <h4>Free Referrals</h4>
+          <p>Questions about referral assignment, volume, and timeline</p>
+        </div>
+      </div>
+      <div class="topic">
+        <div class="t-icon">💳</div>
+        <div>
+          <h4>Billing & Payments</h4>
+          <p>Duplicate charges, USDC wallet setup, payout enquiries</p>
+        </div>
+      </div>
+      <div class="topic">
+        <div class="t-icon">🔁</div>
+        <div>
+          <h4>Refund Requests</h4>
+          <p>Eligibility questions and formal refund request submissions</p>
+        </div>
+      </div>
+      <div class="topic">
+        <div class="t-icon">🤝</div>
+        <div>
+          <h4>Affiliate & JV</h4>
+          <p>WarriorPlus commissions, partnership enquiries, co-promotions</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rm-box">
+      <div class="rm-icon">👤</div>
+      <div>
+        <h3>Your Dedicated Relationship Manager</h3>
+        <p>As an ELITE member, you're not just opening a support ticket — you have a dedicated relationship manager assigned to your account. They can help you set up your Auto Mailer sequence, optimize your broadcast strategy, and maximize your referral commissions. Mention "Relationship Manager" in your email subject for direct routing.</p>
+      </div>
+    </div>
+
+    <div class="response-note">
+      <strong>⏱️ Response Time:</strong> ELITE members receive <strong>priority support</strong> — typical response time is <strong>within 24 hours</strong> on business days. For fastest service, include your <strong>WarriorPlus order ID</strong> and a clear description in your first email. Payout and billing queries are handled every Sunday.
+    </div>
+  </div>
+
+</main>
+<footer>
+  <div class="fi">
+    <div class="fb">Bzillion<span>.</span>Club</div>
+    <div class="fn">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy-elite.html">Privacy Policy</a>
+      <a href="terms-of-service-elite.html">Terms of Service</a>
+      <a href="refund-policy-elite.html">Refund Policy</a>
+      <a href="contact-elite.html">Contact Us</a>
+    </div>
+    <p class="fc">© 2026 Bzillion.Club (BB Enterprises). All rights reserved. &nbsp;|&nbsp; admin@bzillion.club</p>
+  </div>
+</footer>
+</body>
+</html>

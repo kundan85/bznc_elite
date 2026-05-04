@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bzillion.Club ELITE — Build Your Network. Build Your Net Worth.</title>
+  <meta name="description" content="ELITE membership gives you the full power of Bzillion.Club — Auto Mailer, Bulk Mailer, Link Rotator, Free Referrals, Image Broadcasts and more. $15/month or $150/year."/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <script type="text/javascript" src="https://warriorplus.com/o2/disclaimer/c3j5dq" defer></script>
+  <style>
+    :root {
+      --black: #050505;
+      --black2: #0a0a0a;
+      --black3: #101010;
+      --black4: #161616;
+      --black5: #1c1c1c;
+      --border: #222;
+      --border2: #2a2a2a;
+      --gold: #b8922a;
+      --gold2: #d4a843;
+      --gold3: #f0c866;
+      --gold4: #fff4d6;
+      --crimson: #8b0000;
+      --crimson2: #a50000;
+      --red: #cc1a1a;
+      --text: #b0a898;
+      --text2: #7a7068;
+      --white: #f2ede8;
+      --green: #2d6a4f;
+      --green2: #52b788;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── GRAIN TEXTURE ── */
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* ── ANNOUNCEMENT ── */
+    .announce {
+      background: linear-gradient(90deg, var(--crimson) 0%, var(--gold) 50%, var(--crimson) 100%);
+      background-size: 200% 100%;
+      animation: shimmer 4s linear infinite;
+      padding: 9px 20px;
+      text-align: center;
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    @keyframes shimmer { 0%{background-position:0% 50%} 100%{background-position:200% 50%} }
+
+    /* ── HEADER ── */
+    header {
+      background: rgba(5,5,5,0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 18px 48px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px; font-weight: 900;
+      color: var(--white); text-decoration: none;
+      letter-spacing: 1px;
+    }
+    .logo .elite-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px; letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold3);
+      display: block;
+      margin-top: -4px;
+    }
+    nav a {
+      color: var(--text2); text-decoration: none;
+      font-size: 13px; margin-left: 24px;
+      font-weight: 500; letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--gold3); }
+    .nav-cta {
+      background: var(--gold);
+      color: var(--black) !important;
+      padding: 8px 20px;
+      font-weight: 600 !important;
+      letter-spacing: 1px !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--gold3) !important; color: var(--black) !important; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 92vh;
+      display: flex; align-items: center;
+      position: relative; overflow: hidden;
+      padding: 80px 48px;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 100% 80% at 100% 50%, rgba(184,146,42,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 60% at 0% 100%, rgba(139,0,0,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 50% 0%, rgba(184,146,42,0.04) 0%, transparent 50%),
+        var(--black);
+    }
+    .hero-grid-lines {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(184,146,42,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(184,146,42,0.04) 1px, transparent 1px);
+      background-size: 80px 80px;
+      mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 0%, transparent 80%);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 780px;
+    }
+
+    .kicker {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: 'DM Mono', monospace;
+      font-size: 11px; letter-spacing: 4px;
+      text-transform: uppercase; color: var(--gold2);
+      margin-bottom: 28px;
+    }
+    .kicker::before {
+      content: '';
+      width: 32px; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold2));
+    }
+    .kicker::after {
+      content: '';
+      width: 32px; height: 1px;
+      background: linear-gradient(90deg, var(--gold2), transparent);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: clamp(44px, 6.5vw, 90px);
+      line-height: 1.0;
+      color: var(--white);
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+    .hero h1 .line2 {
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(212,168,67,0.5);
+      display: block;
+    }
+    .hero h1 .line3 {
+      color: var(--gold3);
+      display: block;
+    }
+
+    .hero-rule {
+      width: 80px; height: 2px;
+      background: linear-gradient(90deg, var(--gold), transparent);
+      margin: 28px 0;
+    }
+
+    .hero-desc {
+      font-size: clamp(16px, 2vw, 19px);
+      color: var(--text);
+      max-width: 600px;
+      line-height: 1.8;
+      margin-bottom: 44px;
+      font-weight: 300;
+    }
+    .hero-desc strong { color: var(--white); font-weight: 600; }
+
+    /* HERO PRICE DISPLAY */
+    .hero-pricing {
+      display: flex; align-items: center; gap: 32px;
+      flex-wrap: wrap; margin-bottom: 36px;
+    }
+    .h-price-card {
+      background: var(--black3);
+      border: 1px solid var(--border2);
+      padding: 20px 28px;
+      position: relative;
+    }
+    .h-price-card.featured {
+      border-color: var(--gold);
+      background: linear-gradient(135deg, rgba(184,146,42,0.08) 0%, var(--black3) 100%);
+    }
+    .h-price-card .badge {
+      position: absolute; top: -11px; left: 50%; transform: translateX(-50%);
+      background: var(--gold); color: var(--black);
+      font-family: 'DM Mono', monospace;
+      font-size: 9px; letter-spacing: 2px; text-transform: uppercase;
+      padding: 3px 12px; white-space: nowrap;
+      font-weight: 500;
+    }
+    .h-price-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--text2); margin-bottom: 6px;
+    }
+    .h-price-amount {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px; font-weight: 900;
+      color: var(--gold3); line-height: 1;
+    }
+    .h-price-amount span { font-size: 18px; color: var(--text2); }
+    .h-price-was { font-size: 13px; color: var(--text2); margin-top: 4px; }
+    .h-price-was s { color: var(--text2); }
+    .h-price-save { color: var(--gold2); font-weight: 600; font-size: 13px; }
+    .h-divider {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px; color: var(--border2); font-weight: 700;
+    }
+
+    .btn-elite {
+      display: inline-flex; align-items: center; gap: 12px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold3) 50%, var(--gold) 100%);
+      background-size: 200% 100%;
+      color: var(--black);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700; font-size: 16px;
+      letter-spacing: 1px; text-transform: uppercase;
+      text-decoration: none;
+      padding: 18px 40px;
+      border: none; cursor: pointer;
+      transition: background-position 0.4s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 24px rgba(184,146,42,0.25);
+      clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+    }
+    .btn-elite:hover {
+      background-position: 100% 0;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 40px rgba(212,168,67,0.4);
+    }
+    .btn-elite .arrow { font-size: 18px; transition: transform 0.2s; }
+    .btn-elite:hover .arrow { transform: translateX(4px); }
+
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent;
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500; font-size: 14px;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      padding: 18px 28px;
+      border: 1px solid var(--border2);
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--gold); color: var(--gold3); }
+
+    .hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .hero-trust { margin-top: 40px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text2); }
+    .trust-item .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green2); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
+
+    /* ── SECTIONS ── */
+    section { padding: 96px 48px; }
+    .container { max-width: 960px; margin: 0 auto; }
+    .section-kicker {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px; letter-spacing: 4px;
+      text-transform: uppercase; color: var(--gold2);
+      margin-bottom: 14px; display: flex; align-items: center; gap: 12px;
+    }
+    .section-kicker::before { content: ''; width: 24px; height: 1px; background: var(--gold2); }
+    .section-h {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 4vw, 50px);
+      font-weight: 900; color: var(--white);
+      line-height: 1.1; margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    .section-h .gold { color: var(--gold3); }
+    .section-h .outline {
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(212,168,67,0.4);
+    }
+    .section-lead {
+      font-size: 17px; color: var(--text);
+      max-width: 620px; line-height: 1.8;
+      font-weight: 300;
+    }
+    .section-lead strong { color: var(--white); font-weight: 600; }
+
+    /* ── COMPARISON ── */
+    .compare { background: var(--black2); }
+    .compare-wrap {
+      margin-top: 52px;
+      display: grid; grid-template-columns: 200px 1fr 1fr;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    @media(max-width:640px){ .compare-wrap { grid-template-columns: 120px 1fr 1fr; } }
+    .compare-header {
+      background: var(--black3);
+      padding: 20px 16px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .compare-header.vip { border-right: 1px solid var(--border); }
+    .compare-header.elite {
+      background: linear-gradient(135deg, rgba(184,146,42,0.12) 0%, var(--black3) 100%);
+      border-color: var(--gold);
+    }
+    .col-title {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px; letter-spacing: 3px;
+      text-transform: uppercase; font-weight: 500;
+    }
+    .col-title.gold { color: var(--gold3); }
+    .col-title.dim { color: var(--text2); }
+    .compare-row {
+      display: contents;
+    }
+    .compare-cell {
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      border-right: 1px solid var(--border);
+      font-size: 14px;
+      display: flex; align-items: center;
+    }
+    .compare-cell:last-child { border-right: none; }
+    .compare-cell.feature-name {
+      color: var(--text2); font-size: 13px;
+      background: var(--black3);
+    }
+    .compare-cell.center { justify-content: center; text-align: center; }
+    .compare-cell.elite-col {
+      background: rgba(184,146,42,0.03);
+      border-right: 1px solid rgba(184,146,42,0.15);
+    }
+    .check-yes { color: var(--green2); font-size: 16px; }
+    .check-no { color: var(--border2); font-size: 16px; }
+    .check-partial { color: var(--gold2); font-size: 13px; font-weight: 600; }
+    .elite-only {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--gold2);
+      background: rgba(184,146,42,0.1);
+      border: 1px solid rgba(184,146,42,0.2);
+      padding: 2px 8px; margin-left: 8px;
+    }
+
+    /* ── TOOLS DEEP DIVE ── */
+    .tools { background: var(--black); }
+    .tools-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 52px; }
+    @media(max-width:700px){ .tools-grid { grid-template-columns: 1fr; } }
+
+    .tool-card {
+      background: var(--black3);
+      border: 1px solid var(--border);
+      padding: 36px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .tool-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .tool-card:hover { border-color: rgba(184,146,42,0.3); transform: translateY(-2px); }
+    .tool-card:hover::before { opacity: 1; }
+
+    .tool-card.elite-exclusive {
+      border-color: rgba(184,146,42,0.2);
+      background: linear-gradient(135deg, rgba(184,146,42,0.05) 0%, var(--black3) 60%);
+    }
+    .tool-card.featured-tool {
+      grid-column: span 2;
+      background: linear-gradient(135deg, rgba(139,0,0,0.08) 0%, rgba(184,146,42,0.05) 50%, var(--black3) 100%);
+      border-color: rgba(184,146,42,0.3);
+    }
+    @media(max-width:700px){ .tool-card.featured-tool { grid-column: span 1; } }
+
+    .tool-icon { font-size: 36px; margin-bottom: 16px; }
+    .tool-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px; letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 3px 10px; margin-bottom: 14px;
+      display: inline-block;
+    }
+    .tool-tag.exclusive {
+      background: rgba(184,146,42,0.12);
+      border: 1px solid rgba(184,146,42,0.25);
+      color: var(--gold2);
+    }
+    .tool-tag.included {
+      background: rgba(82,183,136,0.1);
+      border: 1px solid rgba(82,183,136,0.2);
+      color: var(--green2);
+    }
+    .tool-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px; font-weight: 700;
+      color: var(--white); margin-bottom: 10px;
+    }
+    .tool-card p { font-size: 14px; color: var(--text); line-height: 1.8; margin-bottom: 16px; }
+    .tool-bullets { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .tool-bullets li {
+      font-size: 13px; color: var(--text2);
+      padding-left: 18px; position: relative; line-height: 1.6;
+    }
+    .tool-bullets li::before { content: '▸'; position: absolute; left: 0; color: var(--gold2); font-size: 10px; top: 3px; }
+    .tool-bullets li strong { color: var(--text); }
+
+    /* ── INCOME CALCULATOR ── */
+    .income { background: var(--black2); }
+    .income-scenario {
+      background: var(--black3);
+      border: 1px solid var(--border);
+      padding: 36px; margin-top: 36px;
+    }
+    .scenario-header {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 28px;
+      border-bottom: 1px solid var(--border); padding-bottom: 20px;
+    }
+    .scenario-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px; letter-spacing: 3px;
+      text-transform: uppercase;
+      background: rgba(184,146,42,0.1); border: 1px solid rgba(184,146,42,0.2);
+      color: var(--gold2); padding: 4px 12px;
+    }
+    .scenario-title { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); }
+    .income-rows { display: flex; flex-direction: column; gap: 2px; }
+    .income-row {
+      display: grid; grid-template-columns: 1fr auto auto;
+      align-items: center; gap: 20px;
+      background: var(--black4); padding: 14px 20px;
+      font-size: 14px;
+    }
+    .income-row .i-label { color: var(--text2); }
+    .income-row .i-calc { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--border2); }
+    .income-row .i-amount { font-family: 'DM Mono', monospace; font-weight: 500; color: var(--gold3); font-size: 15px; }
+    .income-total {
+      background: linear-gradient(135deg, rgba(184,146,42,0.12) 0%, var(--black4) 100%);
+      border: 1px solid var(--gold);
+      padding: 20px 20px; margin-top: 2px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .income-total .t-label {
+      font-family: 'DM Mono', monospace; font-size: 11px;
+      letter-spacing: 2px; text-transform: uppercase; color: var(--gold2);
+    }
+    .income-total .t-amount {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px; font-weight: 900; color: var(--gold3);
+    }
+    .income-disclaimer { font-size: 12px; color: var(--text2); margin-top: 12px; font-style: italic; }
+
+    /* ── FREE REFERRALS ── */
+    .free-refs {
+      background: var(--black);
+      position: relative; overflow: hidden;
+    }
+    .free-refs::before {
+      content: '';
+      position: absolute; top: -200px; right: -200px;
+      width: 600px; height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(184,146,42,0.05) 0%, transparent 70%);
+    }
+    .globe-stat {
+      margin-top: 48px;
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      gap: 2px;
+    }
+    @media(max-width:600px){ .globe-stat { grid-template-columns: 1fr; } }
+    .globe-box {
+      background: var(--black3); border: 1px solid var(--border);
+      padding: 28px 24px; text-align: center;
+    }
+    .globe-box .g-num {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 900; color: var(--gold3); line-height: 1;
+    }
+    .globe-box .g-label { font-size: 13px; color: var(--text2); margin-top: 8px; line-height: 1.5; }
+    .globe-box .g-label strong { color: var(--text); display: block; font-size: 14px; margin-bottom: 2px; }
+    .free-ref-feature {
+      margin-top: 48px;
+      background: linear-gradient(135deg, rgba(139,0,0,0.08) 0%, rgba(184,146,42,0.06) 50%, var(--black3) 100%);
+      border: 1px solid rgba(184,146,42,0.25);
+      padding: 40px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+      align-items: center;
+    }
+    @media(max-width:640px){ .free-ref-feature { grid-template-columns: 1fr; gap: 24px; } }
+    .free-ref-text h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px; color: var(--white); margin-bottom: 14px; font-weight: 900;
+    }
+    .free-ref-text p { font-size: 15px; color: var(--text); line-height: 1.8; margin-bottom: 12px; }
+    .free-ref-vs { background: var(--black4); border: 1px solid var(--border); padding: 24px; }
+    .vs-row { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+    .vs-row:last-child { border-bottom: none; }
+    .vs-icon { font-size: 18px; flex-shrink: 0; }
+    .vs-row p { font-size: 13px; color: var(--text2); line-height: 1.6; margin: 0; }
+    .vs-row p strong { color: var(--text); }
+
+    /* ── PRICING ── */
+    .pricing-section { background: var(--black2); }
+    .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 52px; max-width: 720px; }
+    @media(max-width:600px){ .pricing-grid { grid-template-columns: 1fr; } }
+    .price-card {
+      background: var(--black3); border: 1px solid var(--border);
+      overflow: hidden; position: relative;
+    }
+    .price-card.annual {
+      border-color: var(--gold);
+      background: linear-gradient(160deg, rgba(184,146,42,0.07) 0%, var(--black3) 60%);
+    }
+    .price-card-top {
+      background: var(--gold); color: var(--black);
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      letter-spacing: 3px; text-transform: uppercase;
+      text-align: center; padding: 8px 16px; font-weight: 500;
+    }
+    .price-card-body { padding: 32px; }
+    .price-plan {
+      font-family: 'DM Mono', monospace; font-size: 11px;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: var(--text2); margin-bottom: 12px;
+    }
+    .price-amount { display: flex; align-items: flex-end; gap: 6px; margin-bottom: 6px; }
+    .price-big {
+      font-family: 'Playfair Display', serif;
+      font-size: 64px; font-weight: 900;
+      color: var(--gold3); line-height: 1;
+    }
+    .price-period { font-size: 16px; color: var(--text2); padding-bottom: 10px; }
+    .price-was-line { font-size: 13px; color: var(--text2); margin-bottom: 4px; }
+    .price-was-line s { color: var(--text2); }
+    .price-saving {
+      display: inline-block;
+      font-family: 'DM Mono', monospace; font-size: 11px;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      background: rgba(184,146,42,0.12); border: 1px solid rgba(184,146,42,0.25);
+      color: var(--gold2); padding: 4px 12px; margin-bottom: 24px;
+    }
+    .price-features { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+    .pf-row { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--text); }
+    .pf-check { color: var(--green2); font-size: 14px; flex-shrink: 0; }
+    .pf-row strong { color: var(--white); }
+    .price-cta {
+      display: block; text-align: center;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold3) 100%);
+      color: var(--black);
+      font-family: 'Outfit', sans-serif; font-weight: 700;
+      font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase;
+      text-decoration: none; padding: 14px 24px;
+      transition: opacity 0.2s, transform 0.2s;
+      clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+    }
+    .price-cta:hover { opacity: 0.9; transform: translateY(-1px); }
+    .price-cta.outline {
+      background: transparent; color: var(--gold2);
+      border: 1px solid var(--gold);
+      clip-path: none;
+    }
+    .price-cta.outline:hover { background: rgba(184,146,42,0.08); }
+    .price-note { font-size: 12px; color: var(--text2); margin-top: 14px; text-align: center; line-height: 1.6; }
+
+    /* ── STEPS ── */
+    .steps-section { background: var(--black); }
+    .steps-flow {
+      margin-top: 52px;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 0; position: relative;
+    }
+    @media(max-width:700px){ .steps-flow { grid-template-columns: 1fr 1fr; } }
+    @media(max-width:450px){ .steps-flow { grid-template-columns: 1fr; } }
+    .steps-flow::before {
+      content: '';
+      position: absolute;
+      top: 36px; left: 12.5%; right: 12.5%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent);
+      opacity: 0.3;
+    }
+    @media(max-width:700px){ .steps-flow::before { display: none; } }
+    .step-box {
+      background: var(--black3); border: 1px solid var(--border);
+      padding: 32px 24px; text-align: center;
+      position: relative; z-index: 2;
+      transition: border-color 0.2s;
+    }
+    .step-box:hover { border-color: rgba(184,146,42,0.3); }
+    .step-n {
+      font-family: 'DM Mono', monospace;
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: var(--black4); border: 1px solid var(--gold);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 500; color: var(--gold3);
+      margin: 0 auto 16px;
+    }
+    .step-box h4 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600; font-size: 15px;
+      color: var(--white); margin-bottom: 8px;
+    }
+    .step-box p { font-size: 13px; color: var(--text2); line-height: 1.6; }
+
+    /* ── FAQ ── */
+    .faq-section { background: var(--black2); }
+    .faq-list { margin-top: 48px; display: flex; flex-direction: column; gap: 2px; }
+    .faq-item { background: var(--black3); border: 1px solid var(--border); }
+    .faq-item.open { border-color: rgba(184,146,42,0.2); }
+    .faq-q {
+      width: 100%; background: none; border: none;
+      color: var(--white); font-family: 'Outfit', sans-serif;
+      font-weight: 500; font-size: 16px;
+      padding: 22px 28px; text-align: left; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    }
+    .faq-q:hover { color: var(--gold3); }
+    .faq-plus {
+      width: 28px; height: 28px; flex-shrink: 0;
+      border: 1px solid var(--border2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; color: var(--gold2);
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .faq-item.open .faq-plus { transform: rotate(45deg); border-color: var(--gold); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-item.open .faq-a { max-height: 400px; }
+    .faq-a-inner {
+      padding: 0 28px 24px; font-size: 15px;
+      color: var(--text2); line-height: 1.8;
+      border-top: 1px solid rgba(255,255,255,0.04); padding-top: 16px;
+    }
+    .faq-a-inner a { color: var(--gold2); text-decoration: none; }
+    .faq-a-inner strong { color: var(--text); }
+
+    /* ── FINAL CTA ── */
+    .final { background: var(--black); position: relative; overflow: hidden; text-align: center; }
+    .final::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 50%, rgba(184,146,42,0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 0% 100%, rgba(139,0,0,0.08) 0%, transparent 50%);
+    }
+    .final-inner { position: relative; z-index: 2; }
+    .final h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 5vw, 64px);
+      font-weight: 900; color: var(--white);
+      line-height: 1.1; margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+    .final h2 em { color: var(--gold3); font-style: italic; }
+    .final p {
+      font-size: 18px; color: var(--text);
+      max-width: 560px; margin: 0 auto 44px;
+      line-height: 1.8; font-weight: 300;
+    }
+    .final-actions { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .ps-block {
+      margin-top: 48px; max-width: 560px;
+      margin-left: auto; margin-right: auto;
+      background: var(--black3); border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      padding: 20px 24px;
+      font-size: 14px; color: var(--text2); line-height: 1.8;
+      text-align: left;
+    }
+    .ps-block strong { color: var(--gold3); }
+
+    /* ── URGENCY BAR ── */
+    .urgency-bar {
+      background: linear-gradient(135deg, var(--crimson) 0%, var(--black3) 100%);
+      border-top: 1px solid rgba(139,0,0,0.5);
+      border-bottom: 1px solid rgba(139,0,0,0.5);
+      padding: 32px 48px; text-align: center;
+    }
+    .urgency-bar h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(20px, 3vw, 32px); color: var(--white);
+      font-weight: 900; margin-bottom: 8px;
+    }
+    .urgency-bar p { color: var(--text); font-size: 15px; margin-bottom: 24px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #030303;
+      border-top: 1px solid var(--border);
+      padding: 52px 48px 28px;
+    }
+    .footer-inner { max-width: 960px; margin: 0 auto; }
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px; color: var(--white);
+      margin-bottom: 6px; font-weight: 900;
+    }
+    .footer-brand span { color: var(--gold3); }
+    .footer-tagline { font-size: 12px; color: var(--text2); margin-bottom: 32px; letter-spacing: 1px; }
+    .disclaimer-wrap { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
+    .disclaimer-box {
+      background: var(--black3); border: 1px solid var(--border);
+      padding: 16px 20px; font-size: 12px; color: #555; line-height: 1.8;
+    }
+    .disclaimer-box h5 {
+      font-family: 'DM Mono', monospace; font-size: 9px;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: #444; margin-bottom: 8px;
+    }
+    .wplus_spdisclaimer { font-size: 12px; color: #555; margin-bottom: 16px; }
+    .footer-nav { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 24px 0 14px; }
+    .footer-nav a { color: #444; text-decoration: none; font-size: 12px; transition: color 0.2s; }
+    .footer-nav a:hover { color: var(--gold2); }
+    .footer-copy { text-align: center; color: #333; font-size: 11px; letter-spacing: 0.5px; }
+
+    /* ── STICKY BAR ── */
+    .sticky {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(20px);
+      border-top: 1px solid var(--gold);
+      padding: 14px 48px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; flex-wrap: wrap; z-index: 200;
+      transform: translateY(100%);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .sticky.visible { transform: translateY(0); }
+    .sticky-text {
+      font-family: 'Outfit', sans-serif; font-size: 15px; color: var(--white);
+    }
+    .sticky-text span { color: var(--gold3); font-weight: 600; }
+    .sticky-btn {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold3) 100%);
+      color: var(--black); font-family: 'Outfit', sans-serif;
+      font-weight: 700; font-size: 13px; letter-spacing: 1.5px;
+      text-transform: uppercase; text-decoration: none;
+      padding: 10px 28px; white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+    .sticky-btn:hover { opacity: 0.9; }
+
+    @media(max-width:768px){
+      header { padding: 16px 20px; }
+      .hero { padding: 60px 20px; min-height: auto; }
+      section { padding: 64px 20px; }
+      .urgency-bar { padding: 28px 20px; }
+      footer { padding: 40px 20px 24px; }
+      .sticky { padding: 12px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- STICKY BAR -->
+<div class="sticky" id="stickyBar">
+  <p class="sticky-text">ELITE Membership — <span>$150/year</span> or <span>$15/month</span></p>
+  <a href="https://warriorplus.com" class="sticky-btn">Become ELITE →</a>
+</div>
+
+<!-- ANNOUNCE -->
+<div class="announce">🔥 ELITE Membership — The Complete Internet Marketer's Toolkit — $15/Month or $150/Year</div>
+
+<!-- HEADER -->
+<header>
+  <a href="#" class="logo">
+    Bzillion<span style="color:var(--gold3)">.</span>Club
+    <span class="elite-tag">Elite Membership</span>
+  </a>
+  <nav>
+    <a href="#tools">Tools</a>
+    <a href="#referrals">Free Referrals</a>
+    <a href="#pricing">Pricing</a>
+    <a href="contact-elite.html">Contact</a>
+    <a href="https://warriorplus.com" class="nav-cta">Join ELITE</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div class="kicker">Bzillion.Club Elite Membership</div>
+    <h1>
+      Your Network
+      <span class="line2">Is Your</span>
+      <span class="line3">Net Worth.</span>
+    </h1>
+    <div class="hero-rule"></div>
+    <p class="hero-desc">
+      VIP gets you in the room. <strong>ELITE gives you the entire stage.</strong>
+      The complete toolkit for serious internet marketers who want to build a real team,
+      automate their follow-up, and earn <strong>50% commission</strong> on every upgrade —
+      month after month, on autopilot.
+    </p>
+
+    <div class="hero-pricing">
+      <div class="h-price-card">
+        <div class="h-price-label">Monthly Plan</div>
+        <div class="h-price-amount">$15<span>/mo</span></div>
+        <div class="h-price-was">Flexible — cancel anytime</div>
+      </div>
+      <div class="h-divider">or</div>
+      <div class="h-price-card featured">
+        <div class="badge">Best Value</div>
+        <div class="h-price-label">Annual Plan</div>
+        <div class="h-price-amount">$150<span>/yr</span></div>
+        <div class="h-price-was"><s>$180/yr</s> &nbsp;<span class="h-price-save">Save $30</span></div>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a href="https://warriorplus.com" class="btn-elite">
+        Become ELITE Today <span class="arrow">→</span>
+      </a>
+      <a href="#tools" class="btn-secondary">See All Tools ↓</a>
+    </div>
+
+    <div class="hero-trust">
+      <div class="trust-item"><span class="dot"></span> 128,000+ Active Members</div>
+      <div class="trust-item">🌍 170,000+ Monthly Visits</div>
+      <div class="trust-item">💰 50% Upgrade Commission</div>
+      <div class="trust-item">🎁 Free Referrals — Zero Effort</div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="compare">
+  <div class="container">
+    <div class="section-kicker">Why Upgrade</div>
+    <h2 class="section-h">VIP Gets You Started.<br/><span class="gold">ELITE Makes You Unstoppable.</span></h2>
+    <p class="section-lead">Here's exactly what separates ELITE from VIP — and why serious team builders choose ELITE every time.</p>
+    <div class="compare-wrap">
+      <!-- Header Row -->
+      <div class="compare-header" style="border-right:1px solid var(--border);">
+        <span class="col-title dim">Feature</span>
+      </div>
+      <div class="compare-header vip">
+        <span class="col-title dim">VIP</span>
+      </div>
+      <div class="compare-header elite">
+        <span class="col-title gold">ELITE ★</span>
+      </div>
+      <!-- Rows -->
+      <div class="compare-cell feature-name">Daily Login Bonus</div>
+      <div class="compare-cell center">Spins</div>
+      <div class="compare-cell center elite-col"><span class="check-yes">★</span> Up to $0.10</div>
+
+      <div class="compare-cell feature-name">Referral Bonus</div>
+      <div class="compare-cell center">$0.05/referral</div>
+      <div class="compare-cell center elite-col" style="color:var(--gold3);font-weight:600;">$0.10/referral</div>
+
+      <div class="compare-cell feature-name">Upgrade Commission</div>
+      <div class="compare-cell center">25%</div>
+      <div class="compare-cell center elite-col" style="color:var(--gold3);font-weight:700;font-size:16px;">50%</div>
+
+      <div class="compare-cell feature-name">Minimum Withdrawal</div>
+      <div class="compare-cell center">$10</div>
+      <div class="compare-cell center elite-col" style="color:var(--gold3);font-weight:600;">$5</div>
+
+      <div class="compare-cell feature-name">Broadcast to Community</div>
+      <div class="compare-cell center"><span class="check-yes">✓</span> Text only</div>
+      <div class="compare-cell center elite-col"><span class="check-yes">✓</span> <strong style="color:var(--gold2);">With Images</strong></div>
+
+      <div class="compare-cell feature-name">PTC Ads</div>
+      <div class="compare-cell center"><span class="check-yes">✓</span> Basic</div>
+      <div class="compare-cell center elite-col"><span class="check-yes">✓</span> <strong style="color:var(--gold2);">With Targeting</strong></div>
+
+      <div class="compare-cell feature-name">Private Messaging</div>
+      <div class="compare-cell center"><span class="check-yes">✓</span></div>
+      <div class="compare-cell center elite-col"><span class="check-yes">✓</span></div>
+
+      <div class="compare-cell feature-name">Auto Mailer (30-day sequence)</div>
+      <div class="compare-cell center"><span class="check-no">✗</span></div>
+      <div class="compare-cell center elite-col"><span class="check-yes">✓</span><span class="elite-only">Elite</span></div>
+
+      <div class="compare-cell feature-name">Bulk Mailer</div>
+      <div class="compare-cell center"><span class="check-no">✗</span></div>
+      <div class="compare-cell center elite-col"><span class="check-yes">✓</span><span class="elite-only">Elite</span></div>
+
+      <div class="compare-cell feature-name">Link Rotator</div>
+      <div class="compare-cell center"><span class="check-no">✗</span></div>
+      <div class="compare-cell center elite-col"><span class="check-yes">✓</span><span class="elite-only">Elite</span></div>
+
+      <div class="compare-cell feature-name">Free Referrals Assigned</div>
+      <div class="compare-cell center"><span class="check-no">✗</span></div>
+      <div class="compare-cell center elite-col"><span class="check-yes">✓</span><span class="elite-only">Elite</span></div>
+
+      <div class="compare-cell feature-name">Dedicated Relationship Manager</div>
+      <div class="compare-cell center"><span class="check-no">✗</span></div>
+      <div class="compare-cell center elite-col"><span class="check-yes">✓</span><span class="elite-only">Elite</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS DEEP DIVE -->
+<section class="tools" id="tools">
+  <div class="container">
+    <div class="section-kicker">The ELITE Toolkit</div>
+    <h2 class="section-h">Every Tool a Serious Marketer<br/><span class="gold">Actually Needs.</span></h2>
+    <p class="section-lead">ELITE isn't just a higher tier. It's a complete system for building, nurturing, and monetizing your team — with tools that would cost $50–$100/month if you bought them separately.</p>
+    <div class="tools-grid">
+
+      <!-- FEATURED: FREE REFERRALS -->
+      <div class="tool-card featured-tool elite-exclusive">
+        <div class="tool-tag exclusive">Elite Exclusive — Most Powerful</div>
+        <div class="tool-icon">🎁</div>
+        <h3>Free Referrals — Your Network Grows While You Sleep</h3>
+        <p>When someone signs up to Bzillion.Club without a referrer, they don't fall into a void — they're <strong>automatically assigned to an ELITE member.</strong> That's you. No ad spend. No outreach. No hustle required. The platform's own traffic does the work.</p>
+        <div class="tools-grid" style="margin-top:16px; gap:16px;">
+          <div>
+            <div class="tool-bullets">
+              <li>Bzillion.Club receives <strong>170,000+ pageviews per month</strong> from 100+ countries</li>
+              <li>A portion of every new sign-up without a sponsor becomes <strong>your referral</strong></li>
+              <li>Each free referral earns you <strong>$0.10 referral bonus</strong> automatically</li>
+            </div>
+          </div>
+          <div>
+            <div class="tool-bullets">
+              <li>When they upgrade, you earn <strong>50% upgrade commission</strong> — again, automatically</li>
+              <li>Other platforms charge $1–$5 per rented referral. Here, they're <strong>completely free</strong></li>
+              <li>This is <strong>truly passive team growth</strong> — no equivalent exists on competing platforms</li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AUTO MAILER -->
+      <div class="tool-card elite-exclusive">
+        <div class="tool-tag exclusive">Elite Exclusive</div>
+        <div class="tool-icon">📧</div>
+        <h3>Auto Mailer</h3>
+        <p>Set up a <strong>30-day automated email sequence</strong> and it runs on autopilot — forever. Every referral you have, old and new, receives your pre-written emails on the exact schedule you set.</p>
+        <ul class="tool-bullets">
+          <li>Write once. Send to <strong>all referrals continuously</strong> — not just new ones</li>
+          <li>Day 1, Day 2 ... Day 30 — full drip campaign control</li>
+          <li>Educate, promote, and convert your referrals into <strong>upgraders who pay you 50%</strong></li>
+          <li>The equivalent of hiring a full-time email marketer — included in ELITE</li>
+        </ul>
+      </div>
+
+      <!-- BULK MAILER -->
+      <div class="tool-card elite-exclusive">
+        <div class="tool-tag exclusive">Elite Exclusive</div>
+        <div class="tool-icon">📨</div>
+        <h3>Bulk Mailer</h3>
+        <p>When you have a hot offer, a limited-time deal, or urgent news — <strong>blast it to every single one of your referrals at once.</strong> One send. Full reach. Instant impact.</p>
+        <ul class="tool-bullets">
+          <li>Send <strong>one broadcast email per day</strong> to your entire referral list</li>
+          <li>Direct inbox delivery — not a dashboard notification, a real email</li>
+          <li>Perfect for <strong>time-sensitive promotions</strong> and flash offers</li>
+          <li>Your referral list is your most valuable asset — this is how you monetize it</li>
+        </ul>
+      </div>
+
+      <!-- LINK ROTATOR -->
+      <div class="tool-card elite-exclusive">
+        <div class="tool-tag exclusive">Elite Exclusive</div>
+        <div class="tool-icon">🔄</div>
+        <h3>Link Rotator</h3>
+        <p>Share <strong>one single link</strong> that automatically rotates through multiple offers. Perfect for affiliate marketers promoting multiple programs at once.</p>
+        <ul class="tool-bullets">
+          <li>Add multiple URLs — the rotator distributes traffic evenly</li>
+          <li>Use in broadcasts, emails, and social media with <strong>one clean link</strong></li>
+          <li>A/B test different offers without changing your link</li>
+          <li>Maximize ROI from <strong>every single visitor</strong> you send</li>
+        </ul>
+      </div>
+
+      <!-- IMAGE BROADCASTS -->
+      <div class="tool-card elite-exclusive">
+        <div class="tool-tag exclusive">Elite Upgrade</div>
+        <div class="tool-icon">🖼️</div>
+        <h3>Image Broadcasts</h3>
+        <p>VIP members broadcast text. ELITE members broadcast <strong>images + text</strong> — creating dramatically more attention-grabbing posts in a text-heavy feed.</p>
+        <ul class="tool-bullets">
+          <li>Add your product screenshot, ad banner, or brand visual</li>
+          <li>Visuals receive <strong>significantly higher click-through rates</strong> than text alone</li>
+          <li>Stand out from every VIP member posting plain text</li>
+          <li>Every 24-hour broadcast slot becomes a <strong>mini display ad</strong></li>
+        </ul>
+      </div>
+
+      <!-- TARGETED PTC -->
+      <div class="tool-card elite-exclusive">
+        <div class="tool-tag exclusive">Elite Upgrade</div>
+        <div class="tool-icon">🎯</div>
+        <h3>Targeted PTC Ads</h3>
+        <p>VIP members run basic PTC ads to the whole community. ELITE members run <strong>audience-targeted PTC ads</strong> — reaching the specific segments most likely to convert.</p>
+        <ul class="tool-bullets">
+          <li>Target by member activity, location, or membership tier</li>
+          <li>Stop wasting impressions — reach <strong>buyers, not browsers</strong></li>
+          <li>Higher relevance = higher CTR = better ROI on every ad dollar spent</li>
+          <li>The difference between <strong>spray-and-pray vs. precision marketing</strong></li>
+        </ul>
+      </div>
+
+      <!-- RELATIONSHIP MANAGER -->
+      <div class="tool-card elite-exclusive">
+        <div class="tool-tag exclusive">Elite Exclusive</div>
+        <div class="tool-icon">👤</div>
+        <h3>Dedicated Relationship Manager</h3>
+        <p>You're not just another account number. As an ELITE member you get a <strong>dedicated relationship manager</strong> — a real person in your corner to help you get maximum results.</p>
+        <ul class="tool-bullets">
+          <li>Priority support with <strong>faster response times</strong></li>
+          <li>Guidance on maximizing your referral strategy</li>
+          <li>Help setting up Auto Mailer sequences and broadcast strategy</li>
+          <li>The same service businesses pay <strong>consultants hundreds of dollars</strong> for</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INCOME SCENARIOS -->
+<section class="income">
+  <div class="container">
+    <div class="section-kicker">Income Potential</div>
+    <h2 class="section-h">What Does <span class="gold">50% Commission</span><br/>Actually Look Like?</h2>
+    <p class="section-lead">No income guarantees — results depend entirely on your effort. But here's a realistic breakdown of what the numbers look like when you're active.</p>
+
+    <div class="income-scenario">
+      <div class="scenario-header">
+        <div class="scenario-label">Illustrative Example</div>
+        <div class="scenario-title">Active ELITE Member — 50 Referrals</div>
+      </div>
+      <div class="income-rows">
+        <div class="income-row">
+          <div class="i-label">Referral sign-up bonuses</div>
+          <div class="i-calc">50 referrals × $0.10</div>
+          <div class="i-amount">$5.00</div>
+        </div>
+        <div class="income-row">
+          <div class="i-label">Upgrade commissions (if 10% upgrade to VIP @ $2/mo)</div>
+          <div class="i-calc">5 upgrades × 50% of $2</div>
+          <div class="i-amount">$5.00/mo</div>
+        </div>
+        <div class="income-row">
+          <div class="i-label">Upgrade commissions (if 2 upgrade to ELITE @ $15/mo)</div>
+          <div class="i-calc">2 upgrades × 50% of $15</div>
+          <div class="i-amount">$15.00/mo</div>
+        </div>
+        <div class="income-row">
+          <div class="i-label">Daily login bonuses (active daily)</div>
+          <div class="i-calc">Up to $0.10/day × 30 days</div>
+          <div class="i-amount">up to $3.00/mo</div>
+        </div>
+        <div class="income-row">
+          <div class="i-label">PTC ad views</div>
+          <div class="i-calc">Varies by activity</div>
+          <div class="i-amount">$1–$5/mo</div>
+        </div>
+      </div>
+      <div class="income-total">
+        <div class="t-label">Est. Monthly Recurring</div>
+        <div class="t-amount">$24–$33<span style="font-size:18px;color:var(--text2)">/mo</span></div>
+      </div>
+      <p class="income-disclaimer">* Illustrative only. Actual results depend on your activity, referral quality, and upgrade rates. This is not a guaranteed income projection. Always refer to our full earnings disclaimer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FREE REFERRALS DEEP DIVE -->
+<section class="free-refs" id="referrals">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-kicker">The Unfair Advantage</div>
+    <h2 class="section-h">170,000 Monthly Visitors.<br/><span class="gold">Some of Them</span> <span class="outline">Become Yours.</span></h2>
+    <p class="section-lead">Bzillion.Club is a growing, active platform with massive organic reach. Every visitor who signs up without a referral link gets assigned to an ELITE member. That's you — for free, while you sleep.</p>
+
+    <div class="globe-stat">
+      <div class="globe-box">
+        <div class="g-num">170K+</div>
+        <div class="g-label"><strong>Monthly Pageviews</strong>Real visitors from search, social & direct</div>
+      </div>
+      <div class="globe-box">
+        <div class="g-num">100+</div>
+        <div class="g-label"><strong>Countries</strong>US, UK, Germany, Turkey, Brazil & more</div>
+      </div>
+      <div class="globe-box">
+        <div class="g-num">9M+</div>
+        <div class="g-label"><strong>Total Pageviews</strong>Since January 2025 — growing daily</div>
+      </div>
+    </div>
+
+    <div class="free-ref-feature">
+      <div class="free-ref-text">
+        <h3>Free Referrals — The Feature No Other Platform Offers</h3>
+        <p>Most PTC and community platforms charge you $1–$5 to <em>rent</em> referrals that you don't even own. When your rented referral stops being active, your income drops.</p>
+        <p>At Bzillion.Club ELITE, <strong>free referrals are assigned to you permanently.</strong> They're real people who joined organically. They're in your network. And when they upgrade — you earn 50%.</p>
+        <p>This is the single most powerful passive growth mechanism available to any online marketer today.</p>
+      </div>
+      <div class="free-ref-vs">
+        <div class="vs-row">
+          <div class="vs-icon">❌</div>
+          <p><strong>Other Platforms:</strong> Pay $1–$5 per rented referral. Rental expires. Pay again. No ownership. No long-term value.</p>
+        </div>
+        <div class="vs-row">
+          <div class="vs-icon">✅</div>
+          <p><strong>Bzillion ELITE:</strong> Free referrals assigned automatically from platform's own 170K+ monthly traffic. Permanent. Free. Yours.</p>
+        </div>
+        <div class="vs-row">
+          <div class="vs-icon">💰</div>
+          <p><strong>The payoff:</strong> Each free referral who upgrades to ELITE earns you <strong>$7.50/month forever</strong> (50% of $15). Build a team of 20 upgraders = $150/month recurring.</p>
+        </div>
+        <div class="vs-row">
+          <div class="vs-icon">🚀</div>
+          <p><strong>Your ELITE membership pays for itself</strong> with just 2 referrals upgrading to ELITE monthly ($7.50 × 2 = $15). Everything after is profit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" id="pricing">
+  <div class="container">
+    <div class="section-kicker">Simple Pricing</div>
+    <h2 class="section-h">Choose Your<br/><span class="gold">ELITE Plan.</span></h2>
+    <p class="section-lead">One membership. Full access. Every tool. Both plans include everything — choose what suits your commitment level.</p>
+    <div class="pricing-grid">
+
+      <div class="price-card">
+        <div class="price-card-body">
+          <div class="price-plan">Monthly Plan</div>
+          <div class="price-amount">
+            <div class="price-big">$15</div>
+            <div class="price-period">/month</div>
+          </div>
+          <div class="price-was-line">Billed monthly — flexible</div>
+          <div style="height:28px;"></div>
+          <div class="price-features">
+            <div class="pf-row"><span class="pf-check">✓</span> All ELITE tools & features</div>
+            <div class="pf-row"><span class="pf-check">✓</span> <strong>50%</strong> upgrade commission</div>
+            <div class="pf-row"><span class="pf-check">✓</span> Free referrals assigned</div>
+            <div class="pf-row"><span class="pf-check">✓</span> Auto Mailer + Bulk Mailer</div>
+            <div class="pf-row"><span class="pf-check">✓</span> Link Rotator + Targeting</div>
+            <div class="pf-row"><span class="pf-check">✓</span> Relationship Manager</div>
+            <div class="pf-row"><span class="pf-check">✓</span> Cancel anytime</div>
+          </div>
+          <a href="https://warriorplus.com" class="price-cta outline">Start Monthly →</a>
+          <p class="price-note">Paid monthly via WarriorPlus. Deactivate auto-renewal anytime from your dashboard.</p>
+        </div>
+      </div>
+
+      <div class="price-card annual">
+        <div class="price-card-top">⭐ Best Value — Save $30</div>
+        <div class="price-card-body">
+          <div class="price-plan">Annual Plan</div>
+          <div class="price-amount">
+            <div class="price-big">$150</div>
+            <div class="price-period">/year</div>
+          </div>
+          <div class="price-was-line"><s>$180/year</s> — 2 months free</div>
+          <div class="price-saving">You Save $30 — 17% Off</div>
+          <div class="price-features">
+            <div class="pf-row"><span class="pf-check">✓</span> Everything in Monthly</div>
+            <div class="pf-row"><span class="pf-check">✓</span> <strong>Lock in lowest price</strong></div>
+            <div class="pf-row"><span class="pf-check">✓</span> 365 days uninterrupted access</div>
+            <div class="pf-row"><span class="pf-check">✓</span> Equivalent to $12.50/mo</div>
+            <div class="pf-row"><span class="pf-check">✓</span> Priority onboarding support</div>
+            <div class="pf-row"><span class="pf-check">✓</span> Annual members get first access to new features</div>
+            <div class="pf-row"><span class="pf-check">✓</span> Deactivate auto-renewal anytime</div>
+          </div>
+          <a href="https://warriorplus.com" class="price-cta">Get Annual ELITE — $150/yr →</a>
+          <p class="price-note">🔒 Secure checkout via WarriorPlus · Instant access · USDC payouts every Sunday</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="steps-section">
+  <div class="container">
+    <div class="section-kicker">Getting Started</div>
+    <h2 class="section-h">Up and Running<br/><span class="gold">in 4 Steps.</span></h2>
+    <div class="steps-flow">
+      <div class="step-box">
+        <div class="step-n">01</div>
+        <h4>Purchase on WarriorPlus</h4>
+        <p>Complete secure checkout. Your ELITE account is created and credentials emailed instantly — no manual processing.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-n">02</div>
+        <h4>Set Up Your Auto Mailer</h4>
+        <p>Write your 30-day email sequence. Day 1 through Day 30. Set it once — it runs forever to all your referrals automatically.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-n">03</div>
+        <h4>Configure Your USDC Wallet</h4>
+        <p>Add your wallet address in Profile → Settings. Commissions process every Sunday. Minimum withdrawal just $5.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-n">04</div>
+        <h4>Broadcast & Grow Daily</h4>
+        <p>Post your daily image broadcast, run targeted PTC ads, and watch free referrals join your team while you focus on what matters.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY -->
+<div class="urgency-bar">
+  <div class="container" style="position:relative;z-index:2;text-align:center;">
+    <h3>⚡ Your Team Is Growing Without You Right Now</h3>
+    <p>Every day you're not an ELITE member, free referrals are being assigned to other ELITE members — not you. Those referrals could be upgrading, earning you 50% commission, building your recurring income. Every day you wait is a day someone else earns what could have been yours.</p>
+    <a href="https://warriorplus.com" class="btn-elite" style="margin:0 auto;">Become ELITE — Claim Your Free Referrals <span class="arrow">→</span></a>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-kicker">Questions Answered</div>
+    <h2 class="section-h">Everything You Need<br/><span class="gold">to Know.</span></h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">How is ELITE different from VIP — is it worth the extra cost? <span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">VIP is the foundation — broadcasts, PTC ads, messaging, referral commissions. ELITE is the complete system. You get Auto Mailer (30-day drip sequences to all referrals), Bulk Mailer (daily email blasts to your team), Link Rotator, image broadcasts, audience-targeted PTC, free referrals assigned automatically, and a dedicated relationship manager. Plus your upgrade commission doubles from 25% to <strong>50%</strong> and referral bonus doubles from $0.05 to <strong>$0.10</strong>. For anyone serious about building a team, ELITE pays for itself quickly.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How exactly do Auto Mailer and Bulk Mailer work? <span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><strong>Auto Mailer:</strong> You write up to 30 emails — Day 1, Day 2 ... Day 30. Every single referral you have (not just new ones — all of them) will receive your emails on this schedule automatically. Set it once, let it run forever. It's a complete email drip campaign system built into your membership.<br/><br/><strong>Bulk Mailer:</strong> When you want to send a one-time message — a special offer, a new product launch, urgent news — you write it once and send it to your entire referral list in one click. One send per day. Direct to their inbox.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How many free referrals can I expect to receive? <span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">There's no fixed guarantee — it depends on how many new members join without a referral link each month. What we can confirm: Bzillion.Club receives <strong>170,000+ pageviews per month</strong> from organic traffic across 100+ countries. A portion of those who sign up without a sponsor get distributed to ELITE members. This is entirely passive — no buying, no outreach, no effort required on your end. Compare this to other platforms where you'd pay $1–$5 per rented referral. Here they're free, permanent, and truly yours.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How does the 50% upgrade commission work? <span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">When someone in your direct referral network upgrades their membership — to VIP or ELITE — you earn 50% of their membership fee automatically, credited to your account. This applies to both monthly and yearly plans. It's processed every Sunday along with all other payouts in USDC. This commission is <strong>recurring</strong> — as long as they keep their membership active, you keep earning on renewals.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I switch between monthly and annual plans? <span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes. You can start on the monthly plan and switch to annual at any time. You can also deactivate auto-renewal on either plan from Profile → Settings in your dashboard — no cancellation fees, no penalties. Your membership runs through its paid period regardless.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is ELITE suitable for complete beginners? <span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes — but with one note. If you're completely new to online marketing, you may want to start with VIP to get familiar with the platform, then upgrade to ELITE when you're ready to use the full toolkit. That said, the Auto Mailer and Bulk Mailer are designed to be simple to set up, and your dedicated relationship manager is there to guide you through everything. Many members jump straight to ELITE for the free referrals and 50% commission alone.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What is the refund policy for ELITE membership? <span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">All membership fees — monthly and yearly, VIP and ELITE — are <strong>non-refundable</strong> once the account is activated and access is granted. This is consistent with our terms of service and industry standard for digital platform memberships. Please review all features carefully before purchasing. See our full <a href="refund-policy-elite.html">Refund Policy</a> for details.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="container final-inner">
+    <h2>
+      Stop Building<br/>
+      Someone Else's <em>Network.</em><br/>
+      Build Yours.
+    </h2>
+    <p>128,000+ members. 170,000+ monthly visitors. 50% commission. Free referrals. Auto Mailer. Bulk Mailer. Link Rotator. A dedicated relationship manager. All for $15/month or $150/year. The only question is — how long are you going to wait?</p>
+    <div class="final-actions">
+      <a href="https://warriorplus.com" class="btn-elite">
+        Join ELITE Now — $150/Year <span class="arrow">→</span>
+      </a>
+      <a href="https://warriorplus.com" class="btn-secondary">Start Monthly at $15 →</a>
+    </div>
+    <div class="ps-block">
+      <strong>P.S.</strong> Your ELITE membership pays for itself with just 2 referrals upgrading to ELITE per month (2 × $7.50 = $15). Everything after that is pure profit — on autopilot, every Sunday in USDC. There's never been a better time to go ELITE.
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Bzillion<span>.</span>Club</div>
+    <div class="footer-tagline">The #1 Community for People Making Money Online</div>
+
+    <div class="wplus_spdisclaimer"></div>
+
+    <div class="disclaimer-wrap">
+      <div class="disclaimer-box">
+        <h5>Earnings Disclaimer</h5>
+        Results mentioned on this page are illustrative only and not guaranteed. Individual results will vary based on effort, strategy, referral quality, market conditions, and other factors outside our control. Bzillion.Club is a community advertising platform — not an investment vehicle, MLM, or guaranteed income program. Commission earnings depend entirely on your own activity and your referrals' upgrade decisions.
+      </div>      
+      <div class="disclaimer-box">
+        <h5>Platform Notice</h5>
+        This website is not affiliated with Facebook, Google, Microsoft, or any other platform mentioned. All trademarks belong to their respective owners. Bzillion.Club is operated by BB Enterprises, Lucknow, Uttar Pradesh, India. All member and traffic statistics are live and updated in real time.
+      </div>
+    </div>
+
+    <div class="footer-nav">
+      <a href="elite.html">Home</a>
+      <a href="privacy-policy-elite.html">Privacy Policy</a>
+      <a href="terms-of-service-elite.html">Terms of Service</a>
+      <a href="refund-policy-elite.html">Refund Policy</a>
+      <a href="contact-elite.html">Contact Us</a>
+      <a href="https://www.trustpilot.com/review/bzillion.club" target="_blank">Trustpilot Reviews</a>
+    </div>
+    <p class="footer-copy">© 2026 Bzillion.Club (BB Enterprises). All rights reserved. &nbsp;|&nbsp; admin@bzillion.club</p>
+    <br><br>
+  </div>
+</footer>
+
+<script>
+  // FAQ
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // Sticky bar
+  const sticky = document.getElementById('stickyBar');
+  window.addEventListener('scroll', () => {
+    sticky.classList.toggle('visible', window.scrollY > 700);
+  });
+</script>
+
+</body>
+</html>
